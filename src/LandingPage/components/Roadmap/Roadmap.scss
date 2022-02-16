@@ -1,0 +1,189 @@
+@media(max-width:1024px){
+    .contenedor-seccion-roadmap{
+     
+         h2{
+             font-size: 2rem;
+         }
+        
+        .contenedor-roadmap{
+            margin-top: 80px;
+           
+           
+            .contenedor-roadmap-imagen{
+               
+                margin: auto;
+                width: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .imagen-pelota{
+                    width: 250px;
+                }
+            }
+            .contenedor-roadmap-text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                margin: 35px;  
+                .contenedor-steps{
+                    width: 90%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    h4{
+                        
+                       font-size: 1rem;
+                       padding: 0px 20px;
+                    }
+                    .contenedor-check{
+                        z-index: 10000;
+                        background-color: black;
+                        border-radius: 50%;
+                        border: 2px solid #6af394;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 60px;
+                        position: relative;
+                        padding: 10px;
+                        img{
+                            width: 30px;
+                        }
+                        .line-middle{
+                            width: 3px;
+                            height: 110px;
+                            background: white;
+                            position: absolute;
+                            top: 60px;
+                            z-index: 0;
+                        }
+                        .line-middle-check{
+                            width: 3px;
+                            height: 110px;
+                            background: grey;
+                            position: absolute;
+                            top: 60px;
+                            z-index: 0;
+                        }
+                    }
+                    .contenedor-steps-text{
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-end;
+                        h5{
+                            
+                            width: 85%;
+                            font-size: 0.7rem;
+                            color: #6BF394;
+                            font-weight: 900;
+                            border-radius: 40px;
+                            border: 1px solid #6af394;
+                            text-align: center;
+                            line-height: 33px;
+                            
+                        }
+                        ul{
+                            
+                            list-style: none;
+                            li{
+                                font-size: 0.7rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+@media(min-width:1025px){
+.contenedor-seccion-roadmap{
+    margin: 100px auto 0px auto;
+    
+    .contenedor-roadmap{
+        margin-top: 80px;
+        display: flex;
+       
+        .contenedor-roadmap-img{
+            width: 40%;
+        }
+        .contenedor-roadmap-text{
+            width: 60%;
+            margin-left: 100px;     
+            .contenedor-steps{
+                margin-bottom: 20px;
+                display: flex;
+               
+                align-items: flex-start;
+                h4{
+                    
+                    width: 25%;
+                    margin-top: 10px;
+                }
+                .contenedor-check{
+                    z-index: 10000;
+                    background-color: black;
+                    border-radius: 50%;
+                    border: 2px solid #6af394;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    height: 60px;
+                    position: relative;
+                    img{
+                        width: 30px;
+                    }
+                    .line-middle{
+                        width: 3px;
+                        height: 110px;
+                        background: white;
+                        position: absolute;
+                        top: 60px;
+                        z-index: 0;
+                    }
+                    .line-middle-check{
+                        width: 3px;
+                        height: 110px;
+                        background: grey;
+                        position: absolute;
+                        top: 60px;
+                        z-index: 0;
+                    }
+                }
+                .contenedor-steps-text{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-end;
+                    h5{
+                        
+                        width: 50%;
+                        font-size: 1rem;     
+                        color: #6BF394;
+                        font-weight: 900;
+                        border-radius: 40px;
+                        border: 1px solid #6af394;
+                        text-align: center;
+                         line-height: 33px;
+                    }
+                    ul{
+                        width: 70%;
+                        list-style: none;
+                        li{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+}

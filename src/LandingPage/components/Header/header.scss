@@ -1,0 +1,178 @@
+@media(max-width:1024px){
+.contenedor-header{
+    margin: 15px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    .contenedor-logo{
+        img{
+            width: 80px;
+            
+        }
+    }
+    .contenedor-burguer-menu{
+        cursor: pointer;
+        :first-child{
+            width: 12px;
+        }
+        :nth-child(2){
+            width: 15px;
+        }
+        :nth-child(3){
+            width: 20px;
+        }
+        span{
+            margin: 3px 0px;
+            
+            height: 2px;
+            background-color: white;
+            display: block;
+           
+        }
+    }
+
+    .contenedor-nav{
+        display: none;
+        transition: 2s all ease-in-out ;
+        &.open{
+            display: block;
+            position: absolute;
+            top: 65px;
+            left: 0;
+            right: 0;
+            background-color: black;
+            opacity: 0.9;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+        
+        li{
+           cursor: pointer;
+           padding: 5px 0px;
+           margin: 10px 0px;
+            font-size: 1rem;
+            border-bottom: 2px solid white;
+            a{
+                text-decoration: none;
+                color: white;
+             
+            }
+           
+        }
+    }
+    }
+    .contendor-language-wallet{
+        .contenedor-language{
+            display: none;
+        }
+    }
+}
+}
+@media(min-width:1025px){
+    .contenedor-header{
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+        .contenedor-burguer-menu{
+            display: none;
+        }
+        .contenedor-logo{
+         
+            margin-top: 20px;
+        }
+        .contenedor-nav{
+            margin-top: 35px;
+            width: 55%;
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+            
+            li{
+               cursor: pointer;
+                font-size: 1.2rem;
+                a{
+                    text-decoration: none;
+                    color: white;
+                 
+                }
+               
+            }
+            }
+    
+        }
+        .contendor-language-wallet{
+            margin-top: 20px;
+           
+            
+            display: flex;
+            justify-content: flex-end;
+            
+            .contenedor-language{
+                margin-right: 30px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                p{
+                    margin: 2px 0px 0px 10px;
+                }
+                img{
+                    width: 30px;
+                }
+            }
+    
+            .contenedor-wallet{
+         
+                padding: 12px 20px;
+                font-size: 0.8rem;
+                
+                border-radius: 30px;
+                cursor: pointer;
+                color: black;
+                font-weight: 700;
+                img{
+                    width: 25px;
+                    height: 25px;
+                }
+               
+                
+            }
+            .contenedor-modal{
+                  
+                padding: 20px;
+                .makeStyles-paper-1{
+    
+              
+                .contenedor-header-modal{
+                    margin: 20px auto;
+                    h2{
+                        font-size: 28px;
+                        line-height: 36px;
+                        text-align: start;
+                    }
+    
+                }
+                h3{
+                    font-size: 1.5rem;
+                }
+              
+                .contenedor-conect-wallet{
+                    width: 90%;
+                    margin: auto;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+            }
+        }
+    }
+}
+       
