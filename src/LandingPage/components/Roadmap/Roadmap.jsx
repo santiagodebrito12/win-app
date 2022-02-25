@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Roadmap.scss';
 import 'animate.css';
 import pelota from '../../../assets/ball.webm';
@@ -8,11 +8,15 @@ import uncheck from '../../../assets/uncheck.svg';
 import bag from '../../../assets/bag.svg';
 import ticket from '../../../assets/ticket.svg';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 const Roadmap = () => {
-    
+    useEffect(()=>{
+        Aos.init();
+     },[])
   return (
     <div className="contenedor-seccion-roadmap " id="roadmap">
-        <h2 className="titulo-seccion">ROADMAP</h2>
+        <h2 className="titulo-seccion" data-aos="fade-up">ROADMAP</h2>
         <div className="contenedor-roadmap">
             <div className="contenedor-roadmap-imagen">
             <video autoPlay loop muted className="imagen-pelota">
@@ -23,13 +27,13 @@ const Roadmap = () => {
             </div>
             <div className="contenedor-roadmap-text">
                   
-                <div className="contenedor-steps">
+                <div className="contenedor-steps" >
                     <h4>Q3 2021</h4>
-                    <div className="contenedor-check">
+                    <div className="contenedor-check" data-aos="fade-down">
                         <img src={check} alt="check"/>
                         <div className="line-middle"></div>
                         </div>
-                    <div className="contenedor-steps-text "> 
+                    <div className="contenedor-steps-text " data-aos="fade-down"> 
                         <h5>First Steps</h5>
                         <ul>
                             <li>Legal Study</li>
@@ -40,11 +44,11 @@ const Roadmap = () => {
                 </div>
                 <div className="contenedor-steps">
                     <h4>Q4 2021</h4>
-                    <div className="contenedor-check">
+                    <div className="contenedor-check" data-aos="fade-down" data-aos-duration="4000">
                         <img src={check} alt="check"/>
                         <div className="line-middle"></div>
                         </div>
-                    <div className="contenedor-steps-text">
+                    <div className="contenedor-steps-text" data-aos="fade-down" data-aos-duration="4000">
                         <h5>WIN Structure</h5>
                         <ul>
                             <li>1st Ambassor: </li>
@@ -55,11 +59,11 @@ const Roadmap = () => {
                 </div>
                 <div className="contenedor-steps">
                     <h4>Q1 2022</h4>
-                    <div className="contenedor-check">
+                    <div className="contenedor-check" data-aos="fade-down">
                         <img src={seeds} alt="check"/>
                         <div className="line-middle-check"></div>
                         </div>
-                    <div className="contenedor-steps-text">
+                    <div className="contenedor-steps-text" data-aos="fade-down">
                         <h5>Seeds</h5>
                         <ul>
                             <li>Seed Round</li>
@@ -70,11 +74,11 @@ const Roadmap = () => {
                 </div>
                 <div className="contenedor-steps">
                     <h4>Q2 2022</h4>
-                    <div className="contenedor-check">
+                    <div className="contenedor-check" data-aos="fade-down">
                         <img src={uncheck} alt="check"/>
                         <div className="line-middle-check"></div>
                         </div>
-                    <div className="contenedor-steps-text">
+                    <div className="contenedor-steps-text" data-aos="fade-down">
                         <h5>$WIN IDO</h5>
                         <ul>
                             <li>Legal Study</li>
@@ -86,11 +90,11 @@ const Roadmap = () => {
                 
                 <div className="contenedor-steps">
                     <h4>Q3 2022</h4>
-                    <div className="contenedor-check">
+                    <div className="contenedor-check" data-aos="fade-down" >
                         <img src={bag} alt="check"/>
                         <div className="line-middle-check"></div>    
                         </div>
-                    <div className="contenedor-steps-text">
+                    <div className="contenedor-steps-text" data-aos="fade-down" >
                         <h5>WIN Marketplace</h5>
                         <ul>
                             <li>Launch WIN Marketplace and </li>
@@ -101,11 +105,11 @@ const Roadmap = () => {
                 </div>
                 <div className="contenedor-steps">
                     <h4>Q4 2022</h4>
-                    <div className="contenedor-check">
+                    <div className="contenedor-check" data-aos="fade-down" > 
                         <img src={ticket} alt="check"/>
                         
                         </div>
-                    <div className="contenedor-steps-text">
+                    <div className="contenedor-steps-text" data-aos="fade-down" >
                         <h5>$WIN Public Sale</h5>
                         <ul>
                             <li>Public sale of WIN Token</li>

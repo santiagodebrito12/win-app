@@ -5,10 +5,12 @@ import Marketplace from './components/MarketPlace/Marketplace';
 import Mision from './components/Mision/Mision';
 import Roadmap from './components/Roadmap/Roadmap';
 import Tokenomics from './components/Tokenomics/Tokenomics';
-import background from '../assets/background-market.png';
+
+
 import video from '../assets/video.mp4';
 
 const LandingPage = () => {
+  
   return (
     <div className="contenedor-app">
         <div className="contenedor-background">
@@ -22,7 +24,7 @@ const LandingPage = () => {
         </div>
 
         <Mision/>
-        <div className="contenedor-background-market"><img src={background}/></div>
+        
         <Marketplace/>
         
         <div className="container">

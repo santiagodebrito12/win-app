@@ -1,3 +1,8 @@
+@font-face {
+  font-family: fontTT;
+  src: url(assets/TTFrisNeue.rar);
+}
+
 :root{
   --background:#121214;
   --background2:#383d51;
@@ -17,6 +22,7 @@ body{
   color: #f1f1f3;
   margin: 0;
   padding: 0px;
+  font-family: fontTT;
  
   // font-family: var(--fontPrincipal);
   width: 100vw;
@@ -30,7 +36,8 @@ body{
 .video-background{
   position: absolute;
   width: 100vw;
-  z-index: -10000;;
+  z-index: -10000;
+  opacity: 0.8;
 }
 .titulo-seccion {
   -webkit-text-stroke: 2px #6BF394; 
@@ -38,10 +45,11 @@ body{
   font-size: 4rem;
   font-family: var(--fontSecundaria);
   text-align: center;
+  text-transform: uppercase;
 }
-.contenedor-marketplace{
-  background-image: url(assets/background-market.png);
-}
+// .contenedor-marketplace{
+//   background-image: url(assets/backgroundmarket2.svg);
+// }
 .contenedor-background-roadmap{
   background-image: url(assets/background-roadmap.svg);
   background-size: cover;
@@ -112,16 +120,16 @@ body{
    text-decoration: none;
  }
  .contenedor-background-market{
-           
-  position: absolute;
-  top: 1000px;
-  z-index: -10000;
-  width: 100%;
-  img{
-      width: 100vw;
-      overflow: hidden;
-  }
+   position: absolute;
+
+   img{
+     opacity: 0.9;
+
+   }
+  
+ 
 }
+
 
 .contenedor-wallets{
   position: relative;
@@ -152,3 +160,5 @@ body{
   font-size: 1.2rem;
   font-weight: 900;
 }
+
+

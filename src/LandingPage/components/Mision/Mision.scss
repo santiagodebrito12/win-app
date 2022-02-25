@@ -5,10 +5,15 @@
     position: relative;
     width: 80%;
     margin-top: -65px;
+    // animation-delay: 3s;
+    // animation-duration: 3s;
+    // animation-name: slidein;
+        
     .contenedor-goal{
         z-index: 10000;
         margin-top: 150px;
-
+        // animation: bounceInLeft;
+        // animation-duration: 10s;
     }
     .contenedor-text{
         width: 100%;
@@ -60,15 +65,18 @@
 @media(min-width:1025px){
 .contenedor-mision{
     position: relative;
-    width: 80%;
+    width: 90%;
+   
     .contenedor-goal{
         z-index: 10000;
         margin-top: 150px;
-
+     
+        
+        
     }
     .contenedor-text{
         width: 50%;
-        margin: 100px;
+        margin: 100px 30px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -78,6 +86,7 @@
             font-size: 4rem;
             font-family: var(--fontSecundaria);
             text-align: center;
+            text-transform:uppercase;
         }
         p{
             font-size: 1.4rem;
@@ -98,11 +107,11 @@
     .contenedor-goals{
         .contenedor-goals-first-columns{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
            
             .contenedor-investors,.contenedor-athletes,.contenedor-clubs,.contenedor-agents{
                 width: 40%;
-                margin: 30px;
+                margin: 10px;
                 h3{
                     margin: 20px 0px;
                 }
@@ -112,3 +121,17 @@
     }
 }
 }
+
+@keyframes slidein {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+     opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+  
