@@ -4,7 +4,6 @@ import imgjugador from '../../../assets/barrientos.png';
 import config from '../../../assets/config.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import backgrounMarket from '../../../assets/BG.png';
 
 const Marketplace = () => {
     useEffect(()=>{

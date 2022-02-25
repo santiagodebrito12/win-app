@@ -17,7 +17,7 @@ const Tokenomics = () => {
         </div>
         <div className="contenedor-tokenomics-frame">
             
-            <img src={frame} data-aos="flip-down"/>  
+            <img src={frame} data-aos="flip-down" alt="frame-tokenomics"/>  
                       
         </div>
     </div>
