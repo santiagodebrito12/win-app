@@ -142,10 +142,18 @@
 
 @media(min-width:1000px){
    
-      
+        
         .contenedor-marketplace{
             margin-top: 200px;
-            
+            // &:before{
+            //     content: url('../../../assets/BG@2x.png');
+            //     position: absolute;
+            //     top: 1em;
+            //     left: 50%;
+            //     width: 50px;
+            //     height: 50px;
+            //     transform: scale(0.5);
+            // }
             h2 {
                 -webkit-text-stroke: 2px #6BF394; 
                 color: rgba($color: #6BF394, $alpha: 0.2);
@@ -170,6 +178,7 @@
                         line-height: 1.7rem;
                     }
                 }
+                
                 .contenedor-card-marketplace{
                     padding: 25px;
                     
@@ -181,6 +190,10 @@
                     box-sizing: content-box;
                     display: flex;
                     justify-content: space-between;
+                    &:before{
+                        box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+                        filter: blur(100px);
+                    }
                     .contenedor-img-card{
                         img{
                             width: 250px;

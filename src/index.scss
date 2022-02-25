@@ -161,4 +161,15 @@ body{
   font-weight: 900;
 }
 
+.contenedor-background-marketplace{
+  position: relative;
+&:before{
+                content: url('./assets/BG@2x.png');
+                position: absolute;
+                top: -500px;
+                width: 50px;
+                height: 50px;
+                transform: scale(0.5);
+            }
+}
 

@@ -24,7 +24,9 @@ const LandingPage = () => {
         </div>
 
         <Mision/>
-        
+        <div className="contenedor-background-marketplace">
+
+        </div>
         <Marketplace/>
         
         <div className="container">
