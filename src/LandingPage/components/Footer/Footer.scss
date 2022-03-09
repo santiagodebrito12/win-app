@@ -1,0 +1,38 @@
+footer{
+    width: 100%;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contenedor-footer-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        padding: 40px;
+        img{
+            width: 300px;
+            
+        }
+        p{
+            margin-top: 12px;
+            font-family: TT Firs Neue;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 17px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: -0.231818px;
+
+            color: #FFFFFF;
+
+            mix-blend-mode: normal;
+            opacity: 0.5;
+            width: 60%;
+        }
+    }
+    
+   
+
+}

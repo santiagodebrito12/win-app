@@ -145,15 +145,7 @@
         
         .contenedor-marketplace{
             margin-top: 200px;
-            // &:before{
-            //     content: url('../../../assets/BG@2x.png');
-            //     position: absolute;
-            //     top: 1em;
-            //     left: 50%;
-            //     width: 50px;
-            //     height: 50px;
-            //     transform: scale(0.5);
-            // }
+            
             h2 {
                 -webkit-text-stroke: 2px #6BF394; 
                 color: rgba($color: #6BF394, $alpha: 0.2);
@@ -182,7 +174,7 @@
                 .contenedor-card-marketplace{
                     padding: 25px;
                     
-                    background-image: linear-gradient(108.9deg, #201f1f 4.9%, #3e3e3e 97%);
+                    background-color: rgba(255, 255, 255, .15);
                     
                     width: 65%;
                     margin-right: 40px;

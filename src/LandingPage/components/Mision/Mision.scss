@@ -62,17 +62,14 @@
     }
 }
 }
-@media(min-width:1025px){
+@media(min-width:1025px)and(max-width:2000px){
 .contenedor-mision{
     position: relative;
     width: 90%;
    
     .contenedor-goal{
         z-index: 10000;
-        margin-top: 150px;
-     
-        
-        
+        margin-top: 60px;  
     }
     .contenedor-text{
         width: 50%;
@@ -87,6 +84,7 @@
             font-family: var(--fontSecundaria);
             text-align: center;
             text-transform:uppercase;
+            margin-bottom: 18px;
         }
         p{
             font-size: 1.4rem;
@@ -108,7 +106,7 @@
         .contenedor-goals-first-columns{
             display: flex;
             justify-content: space-between;
-           
+            margin-top: 32px;
             .contenedor-investors,.contenedor-athletes,.contenedor-clubs,.contenedor-agents{
                 width: 40%;
                 margin: 10px;
@@ -121,7 +119,63 @@
     }
 }
 }
-
+@media(min-width:20001){
+    .contenedor-mision{
+        position: relative;
+        width: 90%;
+       
+        .contenedor-goal{
+            z-index: 10000;
+            margin-top: 200px;  
+        }
+        .contenedor-text{
+            width: 50%;
+            margin: 100px 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h2 {
+                -webkit-text-stroke: 2px #6BF394; 
+                color: rgba($color: #6BF394, $alpha: 0.2);
+                font-size: 4rem;
+                font-family: var(--fontSecundaria);
+                text-align: center;
+                text-transform:uppercase;
+                margin-bottom: 18px;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+        }
+        .contenedor-img{
+            position: absolute;
+            
+            right: -50px;
+            top: -20px;
+            z-index: -500;
+            border-radius: 20%;
+            img{
+                opacity: 0.5;
+            }
+           
+        }
+        .contenedor-goals{
+            .contenedor-goals-first-columns{
+                display: flex;
+                justify-content: space-between;
+               
+                .contenedor-investors,.contenedor-athletes,.contenedor-clubs,.contenedor-agents{
+                    width: 40%;
+                    margin: 10px;
+                    h3{
+                        margin: 20px 0px;
+                    }
+                }
+            }
+            
+        }
+    }
+    }
 @keyframes slidein {
     0% {
       opacity: 0;

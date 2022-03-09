@@ -8,6 +8,7 @@ import Tokenomics from './components/Tokenomics/Tokenomics';
 
 
 import video from '../assets/video.mp4';
+import Footer from './components/Footer/Footer';
 
 const LandingPage = () => {
   
@@ -36,6 +37,9 @@ const LandingPage = () => {
         <div className="container">
           <Roadmap/>
         </div>
+        </div>
+        <div className="container">
+        <Footer/>
         </div>
       </div>
   )

@@ -70,10 +70,7 @@ const Header = (props) => {
             </ul>
           </nav>
           <div className="contendor-language-wallet">
-             <div className="contenedor-language">
-                <img src={world} alt="world-icon"/>
-                <p>EN</p>
-             </div>
+             
              <div className="contenedor-wallet btn-grad" onClick={()=>{
                handleOpen();
              }}>
