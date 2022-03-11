@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
         <div className="contenedor-footer-logo">
             <img src={logo}/>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aperiam.</p>
+          
         </div>
     </footer>
   )

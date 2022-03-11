@@ -1,4 +1,110 @@
-@media(max-width:1024px){
+@media(max-width:425px){
+    .contenedor-seccion-roadmap{
+     
+         h2{
+             font-size: 2rem;
+             text-transform:uppercase;
+         }
+        
+        .contenedor-roadmap{
+            margin-top: 60px;
+           
+           
+            .contenedor-roadmap-imagen{
+               
+                margin: auto;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .imagen-pelota{
+                    width: 250px;
+                }
+            }
+            .contenedor-roadmap-text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                margin: 35px auto;  
+                .contenedor-steps{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    h4{
+                        
+                       font-size: 0.8rem;
+                       padding: 0px 20px;
+                       margin-top: 10px;
+                    }
+                    .contenedor-check{
+                        z-index: 10000;
+                        background-color: black;
+                        border-radius: 50%;
+                        border: 2px solid #6af394;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
+                        position: relative;
+                        padding: 10px;
+                        img{
+                            width: 20px;
+                        }
+                        .line-middle{
+                            width: 2px;
+                            height: 90px;
+                            background: white;
+                            position: absolute;
+                            top: 38px;
+                            z-index: 0;
+                        }
+                        .line-middle-check{
+                            width: 2px;
+                            height: 90px;
+                            background: grey;
+                            position: absolute;
+                            top: 38px;
+                            z-index: 0;
+                        }
+                    }
+                    .contenedor-steps-text{
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-end;
+                        h5{
+                            
+                            width: 85%;
+                            font-size: 0.7rem;
+                            color: #6BF394;
+                            font-weight: 900;
+                            border-radius: 40px;
+                            border: 1px solid #6af394;
+                            text-align: center;
+                            line-height: 33px;
+                            
+                        }
+                        ul{
+                            
+                            list-style: none;
+                            li{
+                                font-size: 0.6rem;
+                                text-align: flex-start;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+}
+@media(min-width:426px)and(max-width:1439px){
     .contenedor-seccion-roadmap{
      
          h2{
@@ -37,6 +143,7 @@
                         
                        font-size: 1rem;
                        padding: 0px 20px;
+                       margin-top: 10px;
                     }
                     .contenedor-check{
                         z-index: 10000;
@@ -102,7 +209,7 @@
     
     }
 }
-@media(min-width:1025px){
+@media(min-width:1440px){
 .contenedor-seccion-roadmap{
     margin: 100px auto 0px auto;
     

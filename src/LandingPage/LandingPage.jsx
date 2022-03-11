@@ -9,6 +9,7 @@ import Tokenomics from './components/Tokenomics/Tokenomics';
 
 import video from '../assets/video.mp4';
 import Footer from './components/Footer/Footer';
+import back from '../assets/background-tokenomics.png';
 
 const LandingPage = () => {
   
@@ -29,7 +30,9 @@ const LandingPage = () => {
 
         </div>
         <Marketplace/>
-        
+        <div className="contenedor-background-tokenomics">
+          <img src={back}/>
+        </div>
         <div className="container">
           <Tokenomics/>
         </div>

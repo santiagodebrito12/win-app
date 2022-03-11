@@ -1,5 +1,6 @@
 @font-face {
   font-family: 'TT Firs Neue';
+  
   src: url('./assets/TTFrisNeue/TTFirsNeue-Regular.eot');
   src: local('TT Firs Neue Regular'), local('TTFirsNeue-Regular'),
       url('./assets/TTFrisNeue/TTFirsNeue-Regular.eot?#iefix') format('embedded-opentype'),
@@ -9,17 +10,26 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: url('./assets/TTFrisNeue/TTFirsNeue-Bold.eot');
+  src: local('TT Firs Neue Bold'), local('TTFirsNeue-Bold'),
+      url('./assets/TTFrisNeue/TTFirsNeue-Bold.eot?#iefix') format('embedded-opentype'),
+      url('./assets/TTFrisNeue/TTFirsNeue-Bold.woff2') format('woff2'),
+      url('./assets/TTFrisNeue/TTFirsNeue-Bold.woff') format('woff'),
+      url('./assets/TTFrisNeue/TTFirsNeue-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 :root{
   --background:#121214;
   --background2:#383d51;
  
   --fontcolor:·#f1f1f3;
   --fontPrincipal:'TT Firs Neue';
+  
   // --fontPrincipal:'Open Sans', sans-serif;
   --fontSecundaria: 'Syncopate', sans-serif;
-  --fontTercera:  'Montserrat', sans-serif;
-  --fontCuarta: 'Lato', sans-serif;
   --ligthGreen : #6BF394;
   --darkGrey:#303538;
   --ligthbrown:#C9A555;
@@ -36,6 +46,7 @@ body{
   width: 100vw;
   letter-spacing: 0.3;
   overflow-x: hidden;
+
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -ms-touch-action: manipulation;
@@ -70,7 +81,8 @@ body{
   margin-top: 80px;
 }
 
-.btn-grad {background-image: linear-gradient(90.85deg, #6BF394 5.54%, #12FF59 95.49%);}
+.btn-grad {background: linear-gradient(90.85deg, #6BF394 5.54%, #99FFB8 95.49%);
+  box-shadow: 0px 3px 30px rgba(73, 216, 116, 0.4);}
 .btn-grad {
   margin: 20px 0px;
   padding: 10px 20px;
@@ -174,17 +186,29 @@ body{
   font-size: 1.2rem;
   font-weight: 900;
 }
-
-.contenedor-background-marketplace{
-  position: relative;
-&:before{
-                content: url('./assets/backmision2.png');
-                position: absolute;
-                top: -250px;
-                left: 200px;
-                width: 50px;
-                height: 50px;
-                transform: scale(0.5);
-            }
+@media(min-width:968px){
+  .contenedor-background-marketplace{
+    position: relative;
+  &:before{
+                  content: url('./assets/backmision2.png');
+                  position: absolute;
+                  top: -250px;
+                  left: 200px;
+                  width: 50px;
+                  height: 50px;
+                  transform: scale(0.5);
+              }
+  }
+  
 }
 
+.contenedor-background-tokenomics{
+  position: relative;
+
+  img{
+    position: absolute;
+    width: 100vw;
+    z-index: -1000000000;
+    top: -100px;
+  }
+}

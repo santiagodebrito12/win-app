@@ -1,17 +1,231 @@
+@media(max-width:425px){
+    .contenedor-card-marketplace{
+        padding: 10px;
+        
+        background-image: linear-gradient(108.9deg, #201f1f 4.9%, #3e3e3e 97%);
+        
+        
+      
+        border-radius: 20px;
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .contenedor-img-card{
+            img{
+                width: 150px;
+                margin:30px;
+            }
+        }
+        .contenedor-text-card{
+           margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .puntuacion-jugador{
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(171,243,107,1) 0%, rgba(180,243,107,1) 21%, rgba(202,243,107,1) 100%);
+                width: 100%;
+                padding: 5px 5px;
+                border-radius: 15px;
+                text-align: center;
+                font-weight: bolder;
+                color: var(--darkGrey);
+                font-size: 0.8rem;
+            }
+            .jugador-name{
+                font-size: 1rem;
+                font-weight: 800;
+                padding: 5px 0px;
+            }
+            .contenedor-buttons{
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              button{
+                  background-color: transparent;
+                  padding: 10px 20px;
+                  font-size: 0.7rem;
+                  border: 1px solid white; 
+                  color: white;
+                  font-weight: 800;
+                  border-radius: 10px;
+              }
+              :nth-child(2n) {
+                margin-left: 10px;
+              }
+            }
+            p{
+                margin-top: 10px;
+                font-size: 0.8rem;
+                text-align: center;
+            }
+            .contenedor-price-buynow{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+              
+                .contendor-price{
+                    h3{
+                        font-size: 0.7rem ;
+                        font-weight: 900;
+                    }
+                    h4{
+                        font-size: 0.5rem;
+                    }
+                }
+                .contenedor-buy{
+                    button{
+                        background: rgb(255,255,255);
+                        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(243,212,107,1) 0%, rgba(201,173,76,1) 100%);
+                        border: none;
+                        border-radius: 10px;
+                        padding: 10px 20px;
+                        color: white;
+                        font-weight: 800;
+                        font-size: .6rem;
+                    }
+                }
+                .contenedor-button-config{
+                    button{
+                        background-color: transparent;
+                        padding: 5px 10px;
+                        border: 1px solid white; 
+                        color: white;
+                        font-weight: 800;
+                        border-radius: 10px;
+                        img{
+                            width: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:426px)and(max-width:1024px){
+    .contenedor-card-marketplace{
+        padding: 10px;
+        width: 70%;
+        background-image: linear-gradient(108.9deg, #201f1f 4.9%, #3e3e3e 97%);
+        margin:20px auto;
+        
+      
+        border-radius: 20px;
+        box-sizing: content-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .contenedor-img-card{
+            img{
+                width: 200px;
+                margin:30px;
+            }
+        }
+        .contenedor-text-card{
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .puntuacion-jugador{
+                background: rgb(2,0,36);
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(171,243,107,1) 0%, rgba(180,243,107,1) 21%, rgba(202,243,107,1) 100%);
+                width: 40%;
+                padding: 5px 5px;
+                border-radius: 15px;
+                text-align: center;
+                font-weight: bolder;
+                color: var(--darkGrey);
+                font-size: 0.8rem;
+            }
+            .jugador-name{
+                font-size: 1.2rem;
+                font-weight: 800;
+                padding: 5px 0px;
+            }
+            .contenedor-buttons{
+              width: 80%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              button{
+                  background-color: transparent;
+                  padding: 10px 20px;
+                  font-size: 1rem;
+                  border: 1px solid white; 
+                  color: white;
+                  font-weight: 800;
+                  border-radius: 10px;
+              }
+              :nth-child(2n) {
+                margin-left: 20px;
+              }
+            }
+            p{
+                margin-top: 10px;
+                text-align: center;
+            }
+            .contenedor-price-buynow{
+                margin-top: 10px;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+              
+                .contendor-price{
+                    h3{
+                        font-size: 1.2rem ;
+                        font-weight: 900;
+                    }
+                    h4{
+                        font-size: 1rem;
+                    }
+                }
+                .contenedor-buy{
+                    button{
+                        background: rgb(255,255,255);
+                        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(243,212,107,1) 0%, rgba(201,173,76,1) 100%);
+                        border: none;
+                        border-radius: 10px;
+                        padding: 10px 25px;
+                        color: white;
+                        font-weight: 800;
+                        font-size: 1rem;
+                    }
+                }
+                .contenedor-button-config{
+                    button{
+                        background-color: transparent;
+                        padding: 5px 10px;
+                        border: 1px solid white; 
+                        color: white;
+                        font-weight: 800;
+                        border-radius: 10px;
+                        img{
+                            width: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media(max-width:1024px){
 
     .contenedor-marketplace{
-        margin-top: 200px;
+        margin-top: 150px;
         position: relative;
         
-        .conten edor-background-market{
+        .contenedor-background-market{
             position: absolute;
             top: -20px;
         }
         h2 {
             -webkit-text-stroke: 2px #6BF394; 
             color: rgba($color: #6BF394, $alpha: 0.2);
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-family: var(--fontSecundaria);
             text-align: center;
         }
@@ -19,9 +233,13 @@
         .contenedor-info-marketplace{
             
             margin-top: 80px;
-            padding: 0 30px;
+            padding: 0 14px;
             .contenedor-text-marketplace{
-                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
                 h3{
                     color: var(--ligthbrown);
                     font-size: 1.3rem;
@@ -29,118 +247,17 @@
                 }
                 p{
                     line-height: 1.7rem;
-                }
-            }
-            .contenedor-card-marketplace{
-                padding: 10px;
-                
-                background-image: linear-gradient(108.9deg, #201f1f 4.9%, #3e3e3e 97%);
-                
-                
-              
-                border-radius: 20px;
-                box-sizing: content-box;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                .contenedor-img-card{
-                    img{
-                        width: 200px;
-                        margin:30px;
-                    }
-                }
-                .contenedor-text-card{
-                    margin-left: 20px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    .puntuacion-jugador{
-                        background: rgb(2,0,36);
-                        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(171,243,107,1) 0%, rgba(180,243,107,1) 21%, rgba(202,243,107,1) 100%);
-                        width: 40%;
-                        padding: 5px 5px;
-                        border-radius: 15px;
-                        text-align: center;
-                        font-weight: bolder;
-                        color: var(--darkGrey);
-                        font-size: 0.8rem;
-                    }
-                    .jugador-name{
-                        font-size: 1.2rem;
-                        font-weight: 800;
-                        padding: 5px 0px;
-                    }
-                    .contenedor-buttons{
-                      width: 80%;
-                      display: flex;
-                     
-                      button{
-                          background-color: transparent;
-                          padding: 10px 20px;
-                          font-size: 1rem;
-                          border: 1px solid white; 
-                          color: white;
-                          font-weight: 800;
-                          border-radius: 10px;
-                      }
-                      :nth-child(2n) {
-                        margin-left: 20px;
-                      }
-                    }
-                    p{
-                        margin-top: 10px;
-                    }
-                    .contenedor-price-buynow{
-                        width: 90%;
-                        display: flex;
-                        justify-content: space-between;
-                      
-                        .contendor-price{
-                            h3{
-                                font-size: 1rem ;
-                                font-weight: 900;
-                            }
-                            h4{
-                                font-size: 0.8rem;
-                            }
-                        }
-                        .contenedor-buy{
-                            button{
-                                background: rgb(255,255,255);
-                                background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(243,212,107,1) 0%, rgba(201,173,76,1) 100%);
-                                border: none;
-                                border-radius: 10px;
-                                padding: 10px 25px;
-                                color: white;
-                                font-weight: 800;
-                                font-size: .8rem;
-                            }
-                        }
-                        .contenedor-button-config{
-                            button{
-                                background-color: transparent;
-                                padding: 5px 10px;
-                                border: 1px solid white; 
-                                color: white;
-                                font-weight: 800;
-                                border-radius: 10px;
-                                img{
-                                    width: 15px;
-                                }
-                            }
-                        }
-                    }
+                    text-align: center;
                 }
             }
         }
-       
+        
     }
 
 }
     
 
-@media(min-width:1000px){
+@media(min-width:1025px){
    
         
         .contenedor-marketplace{
