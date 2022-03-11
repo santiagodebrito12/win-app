@@ -41,17 +41,17 @@ body{
   margin: 0;
   padding: 0px;
   font-family: var(--fontPrincipal);
-  scroll-behavior: smooth;
+ 
   // font-family: var(--fontPrincipal);
   width: 100vw;
   letter-spacing: 0.3;
   overflow-x: hidden;
 
-  -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  -ms-high-contrast-adjust: none;
+  // -webkit-font-smoothing: antialiased;
+  // -webkit-tap-highlight-color: rgba(0,0,0,0);
+  // -ms-touch-action: manipulation;
+  // touch-action: manipulation;
+  // -ms-high-contrast-adjust: none;
 }
 .contenedor-app{
   margin-top: -15px;
@@ -72,14 +72,19 @@ body{
   text-align: center;
   text-transform: uppercase;
 }
-// .contenedor-marketplace{
-//   background-image: url(assets/backgroundmarket2.svg);
-// }
+
 .contenedor-background-roadmap{
+  background-image: url(assets/background-roadmap.svg);
+  
+  margin-top: 80px;
+}
+@media(min-width:1024px){
+  .contenedor-background-roadmap{
   background-image: url(assets/background-roadmap.svg);
   background-size: cover;
   margin-top: 80px;
-}
+}}
+
 
 .btn-grad {background: linear-gradient(90.85deg, #6BF394 5.54%, #99FFB8 95.49%);
   box-shadow: 0px 3px 30px rgba(73, 216, 116, 0.4);}
@@ -210,5 +215,11 @@ body{
     width: 100vw;
     z-index: -1000000000;
     top: -100px;
+  }
+}
+@media (min-width:1025px) {
+  .contenedor-background-tokenomics{
+    display: none;
+
   }
 }
