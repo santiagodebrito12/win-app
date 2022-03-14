@@ -217,8 +217,10 @@
         margin-top: 80px;
         display: flex;
        
-        .contenedor-roadmap-img{
+        .contenedor-roadmap-imagen{
             width: 40%;
+            z-index: -10000;
+            
         }
         .contenedor-roadmap-text{
             width: 60%;

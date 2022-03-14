@@ -15,7 +15,7 @@ const Mision = () => {
        Aos.init({duration:'2000'});
     },[])
     return (
-    <div className="container contenedor-mision "  id="mision">
+    <div className=" contenedor-mision "  id="mision">
         <div className="contenedor-goal" >
             <div className="contenedor-text " data-aos="fade-up">
 

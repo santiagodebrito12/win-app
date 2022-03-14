@@ -81,13 +81,6 @@ body{
   overflow: hidden;
 
 }
-@media(min-width:1024px){
-  .contenedor-background-roadmap{
-  background-image: url(assets/background-roadmap.svg);
-  background-size: cover;
-  margin-top: 80px;
-  overflow: hidden;
-}}
 
 
 .btn-grad {background: linear-gradient(90.85deg, #6BF394 5.54%, #99FFB8 95.49%);
@@ -112,26 +105,10 @@ body{
   text-decoration: none;
 }
 
-@media(min-width:1025){
- 
-  .btn-grad {
-    margin: 10px;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: black;            
-    
-    border-radius: 10px;
-    display: block;
-    font-weight: bolder;
-    font-size: 1.2rem;
-  }
-  
- 
-}
 
+.contenedor-background,.contenedor-mision,.container,.contenedor-background-roadmap{
+  overflow-x: hidden; 
+ }
 .btn-grad-wallet {background-image: linear-gradient(to right, #212529 0%, #212529 51%, #212529 100%);}
 // .btn-grad-wallet {background-image: linear-gradient(to right, #1F1C2C 0%, #6f6c7f  51%, #1F1C2C  100%)}
 .btn-grad-wallet {
@@ -195,41 +172,101 @@ body{
   font-size: 1.2rem;
   font-weight: 900;
 }
+.contenedor-background-marketplace{
+  position: relative;
+  width: 100%;
+ 
+  img{
+    position: absolute;
+    width: 100vw;
+    top: 100px;
+  }
+}
+.contenedor-background-tokenomics{
+  position: relative;
+  width: 100%;
+  img{
+    position: absolute;
+    width: 100vw;
+    z-index: -1000000000;
+    top: 500px;
+  }
+}
+
 @media(min-width:968px){
   .contenedor-background-marketplace{
     position: relative;
-  &:before{
-              content: '';
-              position: absolute;
-              background: url('./assets/backmision2.png');
-              top: -500px;
-              left: 0px;
-              width: 100%;
-              height: 500px;
-              background-size: cover;
-              }
+    width: 100%;
+    
+    img{
+      position: absolute;
+      width: 100vw;
+      top: -500px;
+    }
+   
               
   }
   
 }
 
-.contenedor-background-tokenomics{
-  position: relative;
 
+@media (min-width:1025px) {
+  .contenedor-background-tokenomics{
+  position: relative;   
+  width: 100%;
+   
   img{
     position: absolute;
     width: 100vw;
-    z-index: -1000000000;
     top: -100px;
   }
-}
-@media (min-width:1025px) {
-  .contenedor-background-tokenomics{
-    display: none;
+
 
   }
+  .contenedor-background-mision{
+    position: relative;
+    &:before{
+      
+        content: url('./assets/backmision.png');
+        display: block;
+        position: absolute;
+        z-index: 1000000000000;
+        top: 900px;
+        right: 0px;
+        opacity: 0.8;
+       
+        
+      
+    }
+  }
 }
+@media(min-width:1024px){
+  .contenedor-background-roadmap{
+  margin-top: 80px;
+  overflow: hidden;
+  min-height: 1500px;
+  background-image: url(assets/background-roadmap.svg);
+  background-size: cover;
+  
+  
+}}
 
-.contenedor-background,.contenedor-mision,.contenedor-background-marketplace,.container,.contenedor-background-roadmap{
- overflow-x: hidden; 
+@media(min-width:1025){
+ 
+  .btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;            
+    
+    border-radius: 10px;
+    display: block;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  
+ 
 }

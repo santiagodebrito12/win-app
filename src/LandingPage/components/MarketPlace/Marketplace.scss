@@ -108,7 +108,7 @@
 @media(min-width:426px)and(max-width:1024px){
     .contenedor-card-marketplace{
         padding: 10px;
-        width: 70%;
+        width: 90%;
         background-image: linear-gradient(108.9deg, #201f1f 4.9%, #3e3e3e 97%);
         margin:20px auto;
         
@@ -289,9 +289,10 @@
                 }
                 
                 .contenedor-card-marketplace{
+                   
+                   
                     padding: 25px;
                     
-                    background-color: rgba(255, 255, 255, .15);
                     
                     width: 65%;
                     margin-right: 40px;
@@ -299,10 +300,12 @@
                     box-sizing: content-box;
                     display: flex;
                     justify-content: space-between;
-                    &:before{
-                        box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-                        filter: blur(100px);
-                    }
+                    background: rgba(255, 255, 255, 0.1);
+                    
+                    box-sizing: border-box;
+                    box-shadow: 0px 0px 64px #000000;
+                    backdrop-filter: blur(5px);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
                     .contenedor-img-card{
                         img{
                             width: 250px;

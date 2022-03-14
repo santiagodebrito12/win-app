@@ -1,4 +1,21 @@
-@media(max-width:1024px){
+@media(max-width:520px){
+    .contenedor-header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 120px;
+        .contenedor-logo{
+            img{
+                width: 60px;
+            }
+        }
+       .contenedor-burguer-menu,.contenedor-nav{
+           display: none;
+       }
+    }
+}
+@media(min-width:521px)and(max-width:1024px){
 .contenedor-header{
     margin: 15px auto;
     display: flex;
