@@ -11,7 +11,9 @@
     .contenedor-goal{
         z-index: 10000;
         margin-top: 150px;
-        
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     .contenedor-text{
         width: 100%;
@@ -32,17 +34,15 @@
         }
     }
     .contenedor-img{
-    //     position: absolute;
-    //     width: 100%;
-        
-    //    top: 70px;
-    //     z-index: -500;
-    //     border-radius: 20%;
-    //     img{
-    //         opacity: 0.5;
-    //         width: 100%;
-    //     }
-       display: none;
+        position: sticky;
+        left: 0;
+        right: 0;
+    
+
+        img{
+            opacity: 0.8;
+            width: 100%;
+        }
     }
     .contenedor-goals{
         display: flex;
